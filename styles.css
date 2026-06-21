@@ -712,7 +712,7 @@ body { background: #fffaf0; color: #082a3d; }
 .owner-card {
   position: relative;
   display: grid;
-  grid-template-columns: 190px 1fr;
+  grid-template-columns: minmax(260px, 360px) 1fr;
   align-items: center;
   gap: 38px;
   min-height: 250px;
@@ -738,7 +738,8 @@ body { background: #fffaf0; color: #082a3d; }
 .owner-logo-wrap {
   display: grid;
   place-items: center;
-  aspect-ratio: 1;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
   border-radius: 22px;
   background: linear-gradient(145deg, #0e4661, #06293e);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), 0 18px 42px rgba(3, 66, 91, .18);
@@ -746,7 +747,8 @@ body { background: #fffaf0; color: #082a3d; }
 .owner-logo-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   border-radius: 20px;
   mix-blend-mode: normal;
 }
@@ -782,7 +784,7 @@ body { background: #fffaf0; color: #082a3d; }
   .credits-sun { width: 80px; right: 6%; top: 13%; }
   .credits-heading > p:last-child { margin-bottom: 30px; font-size: 17px; }
   .owner-card { grid-template-columns: 1fr; gap: 22px; padding: 24px; }
-  .owner-logo-wrap { width: 145px; }
+  .owner-logo-wrap { width: 100%; max-width: 360px; }
   .owner-sparkle { right: 23px; top: 20px; }
 }
 

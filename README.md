@@ -4,6 +4,12 @@ A responsive, static website ready for GitHub Pages.
 
 The site uses the transparent `supernova-logo.png` stored beside `index.html`. Keep every file in the ZIP together at the repository root; no nested asset folder is required for the live site.
 
+The owner profile uses `kyluua-profile.png`, also stored at the repository root. The copy button includes a compatibility fallback for browsers that cannot use the modern clipboard API.
+
+## Domain security
+
+The included `CNAME` file connects the Pages site to `supernovasmp.xyz`. In the domain's DNS settings, remove the incorrect A record `157.85.90.148`. Keep only GitHub Pages' four A records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. After DNS updates, confirm the custom domain in GitHub **Settings → Pages** and enable **Enforce HTTPS** when it becomes available.
+
 ## Customize before publishing
 
 Open `script.js` and update the Discord URL at the top:
