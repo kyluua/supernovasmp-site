@@ -1,11 +1,158 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Supernova SMP</title>
-</head>
-<body>
-    <h1>🌟 Supernova SMP 🌟</h1>
-    <p>IP: supernovasmp.xyz</p>
-    <p>Welcome to the server!</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Supernova SMP — a community-first Minecraft survival server. Build your legacy beneath the stars."
+    />
+    <meta name="theme-color" content="#58ccf5" />
+    <title>Supernova SMP — Minecraft Survival, Reimagined</title>
+    <link rel="icon" href="assets/supernova-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Supernova SMP home">
+        <img src="assets/supernova-logo-transparent.png" alt="" width="46" height="46" />
+        <span>SUPERNOVA<span>SMP</span></span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="mainNavigation" data-nav>
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a href="#join" data-i18n="navJoin">How to join</a>
+        <a href="rules.html" data-i18n="navRules">Rules</a>
+        <a href="credits.html" data-i18n="navCredits">Credits</a>
+        <div class="language-picker">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <label class="visually-hidden" for="language-select" data-i18n="languageLabel">Language</label>
+          <select id="language-select" data-language-select aria-label="Language">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="pt">Português</option>
+          </select>
+        </div>
+        <a class="nav-cta" href="#" data-link="discord" data-i18n="navDiscord">Discord</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="sun" aria-hidden="true"></div>
+        <div class="cloud cloud-one" aria-hidden="true"></div>
+        <div class="cloud cloud-two" aria-hidden="true"></div>
+        <div class="cloud cloud-three" aria-hidden="true"></div>
+        <div class="palm palm-left" aria-hidden="true"><span></span></div>
+        <div class="palm palm-right" aria-hidden="true"><span></span></div>
+
+        <div class="hero-content">
+          <p class="eyebrow"><span></span><b data-i18n="heroEyebrow">SUMMER SEASON IS LIVE</b><span></span></p>
+          <h1 id="hero-title" class="visually-hidden">Supernova SMP</h1>
+          <img class="hero-logo" src="assets/supernova-logo-transparent.png" alt="Supernova SMP — a tropical Minecraft server" />
+          <p class="hero-copy" data-i18n="heroCopy">
+            Your tropical Minecraft getaway—sunny shores, community adventures,
+            and a fresh survival world waiting to be explored.
+          </p>
+
+          <div class="server-wrap">
+            <p class="server-label" data-i18n="serverLabel">JAVA SERVER ADDRESS</p>
+            <button class="server-address" type="button" data-copy-ip aria-label="Copy server address" data-i18n-aria-label="copyServerIp">
+              <span data-server-ip>supernovasmp.xyz</span>
+              <span class="copy-action">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3M6 9h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"/></svg>
+                <span data-copy-label data-i18n="copyIp">Copy IP</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="quick-links" aria-label="Server links">
+            <a class="quick-link discord" href="#" data-link="discord">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 8.8c1-.5 2.2-.8 3.5-.8s2.5.3 3.5.8M9 15c1.7.8 4.3.8 6 0m-6.5-3h.01m6.98 0h.01M7 5.5c-2 1.5-3 4.5-3 9.5 1.5 1.7 3.2 2.7 5 3l1.2-1.7M17 5.5c2 1.5 3 4.5 3 9.5-1.5 1.7-3.2 2.7-5 3l-1.2-1.7M7 5.5A12 12 0 0 1 10 5l.5 1M17 5.5A12 12 0 0 0 14 5l-.5 1"/></svg>
+              <span data-i18n="discord">Discord</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="world-edge" aria-hidden="true">
+          <div class="island island-left"></div>
+          <div class="island island-right"></div>
+          <div class="wave wave-one"></div>
+          <div class="wave wave-two"></div>
+          <div class="sand-edge"></div>
+        </div>
+        <a class="scroll-cue" href="#features"><b data-i18n="explore">EXPLORE</b> <span>↓</span></a>
+      </section>
+
+      <section class="feature-section section" id="features" aria-labelledby="features-title">
+        <div class="section-heading reveal">
+          <p class="kicker" data-i18n="featuresKicker">YOUR NEXT WORLD</p>
+          <h2 id="features-title" data-i18n-html="featuresTitle">Survival in <em>paradise.</em></h2>
+          <p data-i18n="featuresIntro">Familiar Minecraft at its core, elevated by a friendly community and carefully chosen features.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-number">01</span>
+            <div class="pixel-icon diamond" aria-hidden="true"></div>
+            <h3 data-i18n="featureCommunityTitle">Community builds</h3>
+            <p data-i18n="featureCommunityCopy">Team up on towns, landmarks, and ambitious projects that make the server feel like home.</p>
+          </article>
+          <article class="feature-card featured reveal">
+            <span class="feature-number">02</span>
+            <div class="pixel-icon planet" aria-hidden="true"></div>
+            <h3 data-i18n="featureWorldTitle">A world that evolves</h3>
+            <p data-i18n="featureWorldCopy">Beach parties, fresh events, community projects, and new reasons to stay for one more sunset.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-number">03</span>
+            <div class="pixel-icon shield" aria-hidden="true"></div>
+            <h3 data-i18n="featureSafeTitle">Fair & protected</h3>
+            <p data-i18n="featureSafeCopy">Land protection and an active team keep your builds safe without getting in your way.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="join-section section" id="join" aria-labelledby="join-title">
+        <div class="join-orb" aria-hidden="true"></div>
+        <div class="join-content reveal">
+          <p class="kicker" data-i18n="joinKicker">READY FOR LAUNCH?</p>
+          <h2 id="join-title" data-i18n="joinTitle">Dive into the season.</h2>
+          <p data-i18n="joinCopy">Launch Minecraft Java Edition, add the server address, and start your story.</p>
+          <button class="large-copy" type="button" data-copy-ip>
+            <span data-server-ip>supernovasmp.xyz</span>
+            <span data-copy-label data-i18n="copyServerIp">Copy server IP</span>
+          </button>
+          <a class="text-link" href="#" data-link="discord"><b data-i18n="meetDiscord">Meet the community on Discord</b> <span>↗</span></a>
+        </div>
+
+        <ol class="join-steps reveal">
+          <li><span>1</span><div><strong data-i18n="stepOneTitle">Open Minecraft</strong><small data-i18n="stepOneCopy">Use Java Edition</small></div></li>
+          <li><span>2</span><div><strong data-i18n="stepTwoTitle">Add server</strong><small data-i18n="stepTwoCopy">Choose Multiplayer</small></div></li>
+          <li><span>3</span><div><strong data-i18n="stepThreeTitle">Start exploring</strong><small data-i18n="stepThreeCopy">Welcome to Supernova</small></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home">
+        <img src="assets/supernova-logo-transparent.png" alt="" width="38" height="38" />
+        <span>SUPERNOVA<span>SMP</span></span>
+      </a>
+      <p data-i18n="disclaimer">Not affiliated with Mojang Studios or Microsoft.</p>
+      <p>© <span data-year></span> Supernova SMP</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast data-i18n="copiedToast">Server IP copied!</div>
+  </body>
 </html>
