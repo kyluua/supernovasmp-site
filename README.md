@@ -2,7 +2,7 @@
 
 A responsive, static website ready for GitHub Pages.
 
-The site uses `assets/supernova-logo-transparent.png`, a transparent-background version of the supplied logo.
+The site uses the transparent `supernova-logo.png` stored beside `index.html`. Keep every file in the ZIP together at the repository root; no nested asset folder is required for the live site.
 
 ## Customize before publishing
 
