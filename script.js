@@ -1,6 +1,6 @@
 // Change this link before publishing. Everything else updates automatically.
 const SITE_CONFIG = {
-  serverIp: "supernovasmp.xyz",
+  serverIp: "play.supernovasmp.xyz",
   discordUrl: "https://discord.gg/DBceB6573F",
 };
 
