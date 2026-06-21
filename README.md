@@ -4,7 +4,7 @@ A responsive, static website ready for GitHub Pages.
 
 The site uses the transparent `supernova-logo.png` stored beside `index.html`. Keep every file in the ZIP together at the repository root; no nested asset folder is required for the live site.
 
-The owner profile uses `kyluua-profile.png`, also stored at the repository root. The copy button includes a compatibility fallback for browsers that cannot use the modern clipboard API.
+The owner profile uses `kyluua-profile-v2.png`, also stored at the repository root. The versioned filename prevents an older profile image from being reused by browser or GitHub Pages caches. The copy button includes a compatibility fallback for browsers that cannot use the modern clipboard API.
 
 ## Domain security
 
